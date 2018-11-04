@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1300,7 +1300,7 @@ JST PH 2-pin thru-home side entry</description>
 <junction x="63.5" y="78.74"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="GND" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="P$2"/>
 <wire x1="58.42" y1="71.12" x2="71.12" y2="71.12" width="0.1524" layer="91"/>
