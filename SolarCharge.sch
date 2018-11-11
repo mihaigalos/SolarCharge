@@ -5450,8 +5450,8 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 <instance part="+3V2" gate="G$1" x="44.45" y="43.18"/>
 <instance part="+3V14" gate="G$1" x="134.62" y="57.15"/>
 <instance part="LED1" gate="G$1" x="139.7" y="49.53"/>
-<instance part="R3" gate="B" x="139.7" y="33.02" rot="R90"/>
-<instance part="R3" gate="C" x="129.54" y="33.02" rot="R90"/>
+<instance part="R3" gate="B" x="134.62" y="33.02" rot="R90"/>
+<instance part="R3" gate="C" x="139.7" y="33.02" rot="R90"/>
 <instance part="R3" gate="D" x="149.86" y="33.02" rot="R90"/>
 <instance part="CN2" gate="G$1" x="76.2" y="50.8" rot="MR90"/>
 <instance part="SJ2" gate="1" x="116.84" y="30.48"/>
@@ -5560,11 +5560,10 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 <net name="GREEN" class="0">
 <segment>
 <pinref part="R3" gate="B" pin="1"/>
-<wire x1="139.7" y1="25.4" x2="139.7" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="(T0/CLK0/PCINT2/ADC2)PB2"/>
 <wire x1="110.49" y1="27.94" x2="118.11" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="118.11" y1="27.94" x2="120.65" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="120.65" y1="25.4" x2="139.7" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="118.11" y1="27.94" x2="121.92" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="27.94" x2="134.62" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RED" class="0">
@@ -5578,9 +5577,9 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 <net name="BLUE" class="0">
 <segment>
 <pinref part="R3" gate="C" pin="1"/>
-<wire x1="129.54" y1="27.94" x2="121.92" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="27.94" x2="120.65" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="120.65" y1="27.94" x2="118.11" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="27.94" x2="139.7" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="25.4" x2="123.19" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="123.19" y1="25.4" x2="118.11" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="(PCINT1/TPICLK/CLKI/ICP0/OC0B/ADC1/AIN1)PB1"/>
 <wire x1="118.11" y1="25.4" x2="110.49" y2="25.4" width="0.1524" layer="91"/>
 </segment>
@@ -5589,16 +5588,16 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 <segment>
 <pinref part="LED1" gate="G$1" pin="CBLUE"/>
 <pinref part="R3" gate="C" pin="2"/>
-<wire x1="139.7" y1="44.45" x2="133.35" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="133.35" y1="38.1" x2="129.54" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="44.45" x2="139.7" y2="39.37" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="39.37" x2="139.7" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
 <pinref part="LED1" gate="G$1" pin="CRED"/>
 <pinref part="R3" gate="B" pin="2"/>
-<wire x1="134.62" y1="44.45" x2="139.7" y2="39.37" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="39.37" x2="139.7" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="44.45" x2="134.62" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="40.64" x2="134.62" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
