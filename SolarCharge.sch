@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -5422,6 +5422,7 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 <part name="R3" library="SparkFun" deviceset="RESISTOR-ARRAY" device="0603-ARV" value="470Ω"/>
 <part name="CN2" library="lio" deviceset="JST_2PIN" device="-SMT-RA"/>
 <part name="SJ2" library="SparkFun-Passives" deviceset="SOLDERJUMPER" device="NO"/>
+<part name="CN3" library="lio" deviceset="JST_2PIN" device="-SMT-RA"/>
 </parts>
 <sheets>
 <sheet>
@@ -5455,6 +5456,7 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 <instance part="R3" gate="D" x="149.86" y="33.02" rot="R90"/>
 <instance part="CN2" gate="G$1" x="76.2" y="50.8" rot="MR90"/>
 <instance part="SJ2" gate="1" x="116.84" y="30.48"/>
+<instance part="CN3" gate="G$1" x="147.32" y="76.2" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -5473,14 +5475,16 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 <net name="GND" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="P$2"/>
-<wire x1="58.42" y1="71.12" x2="71.12" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="J2" gate="G$1" pin="MOUNT"/>
 <wire x1="101.6" y1="71.12" x2="99.06" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="CN1" gate="G$1" pin="1"/>
-<wire x1="99.06" y1="71.12" x2="71.12" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="71.12" x2="58.42" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="73.66" x2="137.16" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="71.12" x2="99.06" y2="71.12" width="0.1524" layer="91"/>
 <junction x="99.06" y="71.12"/>
+<pinref part="CN3" gate="G$1" pin="1"/>
+<wire x1="149.86" y1="73.66" x2="137.16" y2="73.66" width="0.1524" layer="91"/>
+<junction x="137.16" y="73.66"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="GND"/>
@@ -5514,6 +5518,9 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 <pinref part="CN1" gate="G$1" pin="2"/>
 <wire x1="137.16" y1="76.2" x2="137.16" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="78.74" x2="99.06" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="CN3" gate="G$1" pin="2"/>
+<wire x1="149.86" y1="76.2" x2="137.16" y2="76.2" width="0.1524" layer="91"/>
+<junction x="137.16" y="76.2"/>
 </segment>
 </net>
 <net name="RXD" class="0">
