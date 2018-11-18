@@ -418,232 +418,6 @@ Creation Date: 2015-01-06,
 </deviceset>
 </devicesets>
 </library>
-<library name="SparkFun-Connectors">
-<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
-In this library you'll find connectors and sockets- basically anything that can be plugged into or onto.&lt;br&gt;&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
-&lt;br&gt;&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; CC v3.0 Share-Alike You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="STARBOARD_GROUND">
-<smd name="GROUND" x="0" y="12.065" dx="1.27" dy="0.635" layer="1" rot="R90"/>
-<polygon width="0.2032" layer="1">
-<vertex x="0" y="0"/>
-<vertex x="-0.5334" y="0" curve="-90"/>
-<vertex x="-3.0734" y="2.54"/>
-<vertex x="-3.0734" y="20.574" curve="-90"/>
-<vertex x="-0.5334" y="23.114"/>
-<vertex x="0" y="23.114"/>
-<vertex x="0.5334" y="23.114" curve="-90"/>
-<vertex x="3.0734" y="20.574"/>
-<vertex x="3.0734" y="2.54" curve="-90"/>
-<vertex x="0.5334" y="0"/>
-</polygon>
-<polygon width="0.127" layer="29">
-<vertex x="0.5334" y="0"/>
-<vertex x="-0.5334" y="0" curve="-90"/>
-<vertex x="-3.0734" y="2.54"/>
-<vertex x="-3.0734" y="20.574" curve="-90"/>
-<vertex x="-0.5334" y="23.114"/>
-<vertex x="0.5334" y="23.114" curve="-90"/>
-<vertex x="3.0734" y="20.574"/>
-<vertex x="3.0734" y="2.54" curve="-90"/>
-</polygon>
-</package>
-<package name="STARBOARD_GROUND_SMALL">
-<smd name="GROUND" x="0" y="5.715" dx="1.27" dy="0.635" layer="1" rot="R90"/>
-<polygon width="0.127" layer="1">
-<vertex x="0" y="0"/>
-<vertex x="0.1778" y="0" curve="90"/>
-<vertex x="1.4478" y="1.27"/>
-<vertex x="1.4478" y="9.906"/>
-<vertex x="1.4478" y="9.9822" curve="90"/>
-<vertex x="0" y="11.43" curve="90"/>
-<vertex x="-1.4478" y="9.9822"/>
-<vertex x="-1.4478" y="9.906"/>
-<vertex x="-1.4478" y="1.27" curve="90"/>
-<vertex x="-0.1778" y="0"/>
-</polygon>
-<polygon width="0.127" layer="29">
-<vertex x="0" y="0"/>
-<vertex x="0.1778" y="0" curve="90"/>
-<vertex x="1.4478" y="1.27"/>
-<vertex x="1.4478" y="9.906"/>
-<vertex x="1.4478" y="9.9822" curve="90"/>
-<vertex x="0" y="11.43" curve="90"/>
-<vertex x="-1.4478" y="9.9822"/>
-<vertex x="-1.4478" y="9.906"/>
-<vertex x="-1.4478" y="1.27" curve="90"/>
-<vertex x="-0.1778" y="0"/>
-</polygon>
-</package>
-<package name="STARBOARD_GROUND_WIDE">
-<smd name="GROUND" x="0" y="7.112" dx="1.27" dy="0.635" layer="1" rot="R90"/>
-<polygon width="0.127" layer="1">
-<vertex x="0" y="0"/>
-<vertex x="-1.0698" y="0" curve="-5.71033"/>
-<vertex x="-1.4694" y="0.0199"/>
-<vertex x="-2.54" y="0.127"/>
-<vertex x="-3.5099" y="0.321" curve="-10.489176"/>
-<vertex x="-4.0941" y="0.4946"/>
-<vertex x="-4.2465" y="0.5556" curve="-23.19361"/>
-<vertex x="-5.715" y="1.524"/>
-<vertex x="-5.715" y="2.667"/>
-<vertex x="-5.715" y="7.874"/>
-<vertex x="-5.715" y="10.16"/>
-<vertex x="-5.715" y="12.6365" curve="-45.000116"/>
-<vertex x="-5.6701" y="12.7449" curve="-23.000298"/>
-<vertex x="-4.3051" y="13.645"/>
-<vertex x="-4.0424" y="13.7501" curve="-10.488486"/>
-<vertex x="-3.5646" y="13.8921"/>
-<vertex x="-2.6679" y="14.0714" curve="-5.599851"/>
-<vertex x="-2.4102" y="14.11"/>
-<vertex x="-1.4087" y="14.2101" curve="-5.712609"/>
-<vertex x="-1.1306" y="14.224"/>
-<vertex x="0" y="14.224"/>
-<vertex x="1.1306" y="14.224" curve="-5.712404"/>
-<vertex x="1.4087" y="14.2101"/>
-<vertex x="2.3963" y="14.1114" curve="-5.600505"/>
-<vertex x="2.6817" y="14.0687"/>
-<vertex x="3.4591" y="13.9132" curve="-10.484425"/>
-<vertex x="4.1415" y="13.7104"/>
-<vertex x="4.2462" y="13.6685" curve="-23.000256"/>
-<vertex x="5.715" y="12.7"/>
-<vertex x="5.715" y="8.509"/>
-<vertex x="5.715" y="5.207"/>
-<vertex x="5.715" y="1.524"/>
-<vertex x="5.7005" y="1.5095" curve="-23.197899"/>
-<vertex x="4.2653" y="0.5631" curve="-10.491083"/>
-<vertex x="3.3291" y="0.2848"/>
-<vertex x="2.7268" y="0.1644" curve="-5.598338"/>
-<vertex x="2.3505" y="0.1081" curve="-5.713213"/>
-<vertex x="0.1841" y="0"/>
-</polygon>
-<polygon width="0.127" layer="29">
-<vertex x="0" y="0"/>
-<vertex x="-1.0698" y="0" curve="-5.71033"/>
-<vertex x="-1.4694" y="0.0199"/>
-<vertex x="-2.54" y="0.127"/>
-<vertex x="-3.5099" y="0.321" curve="-10.489176"/>
-<vertex x="-4.0941" y="0.4946"/>
-<vertex x="-4.2465" y="0.5556" curve="-23.19361"/>
-<vertex x="-5.715" y="1.524"/>
-<vertex x="-5.715" y="2.667"/>
-<vertex x="-5.715" y="7.874"/>
-<vertex x="-5.715" y="10.16"/>
-<vertex x="-5.715" y="12.6365" curve="-45.000116"/>
-<vertex x="-5.6701" y="12.7449" curve="-23.000298"/>
-<vertex x="-4.3051" y="13.645"/>
-<vertex x="-4.0424" y="13.7501" curve="-10.488486"/>
-<vertex x="-3.5646" y="13.8921"/>
-<vertex x="-2.6679" y="14.0714" curve="-5.599851"/>
-<vertex x="-2.4102" y="14.11"/>
-<vertex x="-1.4087" y="14.2101" curve="-5.712609"/>
-<vertex x="-1.1306" y="14.224"/>
-<vertex x="0" y="14.224"/>
-<vertex x="1.1306" y="14.224" curve="-5.712404"/>
-<vertex x="1.4087" y="14.2101"/>
-<vertex x="2.3963" y="14.1114" curve="-5.600505"/>
-<vertex x="2.6817" y="14.0687"/>
-<vertex x="3.4591" y="13.9132" curve="-10.484425"/>
-<vertex x="4.1415" y="13.7104"/>
-<vertex x="4.2462" y="13.6685" curve="-23.000256"/>
-<vertex x="5.715" y="12.7"/>
-<vertex x="5.715" y="8.509"/>
-<vertex x="5.715" y="5.207"/>
-<vertex x="5.715" y="1.524"/>
-<vertex x="5.7005" y="1.5095" curve="-23.197899"/>
-<vertex x="4.2653" y="0.5631" curve="-10.491083"/>
-<vertex x="3.3291" y="0.2848"/>
-<vertex x="2.7268" y="0.1644" curve="-5.598338"/>
-<vertex x="2.3505" y="0.1081" curve="-5.713213"/>
-<vertex x="0.1841" y="0"/>
-</polygon>
-</package>
-<package name="STARBOARD_GROUND_SMALL2">
-<smd name="GROUND" x="0" y="5.2705" dx="1.27" dy="0.635" layer="1" rot="R90"/>
-<polygon width="0.127" layer="1">
-<vertex x="0" y="0"/>
-<vertex x="-0.381" y="0" curve="-90"/>
-<vertex x="-1.651" y="1.27"/>
-<vertex x="-1.651" y="9.271" curve="-90"/>
-<vertex x="-0.381" y="10.541"/>
-<vertex x="0" y="10.541"/>
-<vertex x="0.381" y="10.541" curve="-90"/>
-<vertex x="1.651" y="9.271"/>
-<vertex x="1.651" y="1.27" curve="-90"/>
-<vertex x="0.381" y="0"/>
-</polygon>
-<polygon width="0.127" layer="29">
-<vertex x="0" y="0"/>
-<vertex x="-0.381" y="0" curve="-90"/>
-<vertex x="-1.651" y="1.27"/>
-<vertex x="-1.651" y="9.271" curve="-90"/>
-<vertex x="-0.381" y="10.541"/>
-<vertex x="0" y="10.541"/>
-<vertex x="0.381" y="10.541" curve="-90"/>
-<vertex x="1.651" y="9.271"/>
-<vertex x="1.651" y="1.27" curve="-90"/>
-<vertex x="0.381" y="0"/>
-</polygon>
-</package>
-</packages>
-<symbols>
-<symbol name="STARBOARD_PAD">
-<wire x1="-0.762" y1="2.032" x2="1.016" y2="0.254" width="1.016" layer="94" curve="-75.749967" cap="flat"/>
-<wire x1="-3.048" y1="0.254" x2="-1.27" y2="2.032" width="1.016" layer="94" curve="-75.749967" cap="flat"/>
-<wire x1="-3.048" y1="-0.254" x2="-1.27" y2="-2.032" width="1.016" layer="94" curve="75.749967" cap="flat"/>
-<wire x1="-0.762" y1="-2.032" x2="1.016" y2="-0.254" width="1.016" layer="94" curve="75.749967" cap="flat"/>
-<circle x="-1.016" y="0" radius="1.524" width="0.0508" layer="94"/>
-<text x="1.778" y="0.5842" size="1.778" layer="95">&gt;NAME</text>
-<text x="1.778" y="-2.4638" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="MOUNT" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="STARBOARD_GND" prefix="J" uservalue="yes">
-<description>&lt;h3&gt;StarBoard ground Pad&lt;/h3&gt;
-Starboard pads sans the star cutout in top layer</description>
-<gates>
-<gate name="G$1" symbol="STARBOARD_PAD" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="STARBOARD_GROUND">
-<connects>
-<connect gate="G$1" pin="MOUNT" pad="GROUND"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-SMALL" package="STARBOARD_GROUND_SMALL">
-<connects>
-<connect gate="G$1" pin="MOUNT" pad="GROUND"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-WIDE" package="STARBOARD_GROUND_WIDE">
-<connects>
-<connect gate="G$1" pin="MOUNT" pad="GROUND"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-SMALL2" package="STARBOARD_GROUND_SMALL2">
-<connects>
-<connect gate="G$1" pin="MOUNT" pad="GROUND"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="solderjumper">
 <packages>
 <package name="2.SML">
@@ -5405,8 +5179,6 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 <parts>
 <part name="D1" library="Wurth_Elektronik_Optoelectronics_rev15c" deviceset="WL-SWTP" device="3014"/>
 <part name="U$1" library="solar_panel_53_30" deviceset="SOLAR_CELL_53_30" device=""/>
-<part name="J1" library="SparkFun-Connectors" deviceset="STARBOARD_GND" device="-WIDE"/>
-<part name="J2" library="SparkFun-Connectors" deviceset="STARBOARD_GND" device="-WIDE"/>
 <part name="J3" library="solderjumper" deviceset="SOLDERJUMPER.2" device=".XL"/>
 <part name="R1" library="ROHM" deviceset="RESISTOR" device="0603-RES"/>
 <part name="SJ1" library="SparkFun-Passives" deviceset="SOLDERJUMPER-OLD" device="TRACE"/>
@@ -5437,8 +5209,6 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 <instances>
 <instance part="D1" gate="G$1" x="68.58" y="78.74" rot="R180"/>
 <instance part="U$1" gate="G$1" x="53.34" y="71.12"/>
-<instance part="J1" gate="G$1" x="106.68" y="78.74"/>
-<instance part="J2" gate="G$1" x="106.68" y="71.12"/>
 <instance part="J3" gate="G$1" x="68.58" y="88.9"/>
 <instance part="R1" gate="G$1" x="93.98" y="86.36"/>
 <instance part="SJ1" gate="1" x="93.98" y="78.74"/>
@@ -5475,7 +5245,6 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 <net name="GND" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="P$2"/>
-<pinref part="J2" gate="G$1" pin="MOUNT"/>
 <wire x1="101.6" y1="71.12" x2="99.06" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="CN1" gate="G$1" pin="1"/>
 <wire x1="99.06" y1="71.12" x2="58.42" y2="71.12" width="0.1524" layer="91"/>
@@ -5510,7 +5279,6 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 <net name="N$4" class="0">
 <segment>
 <pinref part="SJ1" gate="1" pin="2"/>
-<pinref part="J1" gate="G$1" pin="MOUNT"/>
 <wire x1="99.06" y1="78.74" x2="101.6" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="99.06" y1="86.36" x2="99.06" y2="78.74" width="0.1524" layer="91"/>
