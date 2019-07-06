@@ -13,7 +13,7 @@
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="no" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
@@ -2117,14 +2117,13 @@ design rules under a new name.</description>
 <contactref element="U1" pad="1"/>
 <wire x1="2.72875" y1="41.68125" x2="2.45" y2="41.96" width="0.15240625" layer="16"/>
 <wire x1="2.72875" y1="38.88875" x2="2.72875" y2="41.68125" width="0.1524" layer="16"/>
-<wire x1="2.72875" y1="41.68125" x2="2.45" y2="41.96" width="0.1524" layer="16"/>
 <contactref element="R6" pad="1"/>
 <contactref element="Q1" pad="1"/>
-<wire x1="17.7" y1="46.65" x2="17.7" y2="45.55" width="0.1524" layer="16"/>
-<wire x1="17.7" y1="45.55" x2="17.75" y2="45.5" width="0.1524" layer="16"/>
-<via x="17.75" y="45.5" extent="1-16" drill="0.35"/>
-<wire x1="17.75" y1="45.5" x2="15.75" y2="45.5" width="0.1524" layer="1"/>
-<wire x1="15.75" y1="45.5" x2="14.25" y2="44" width="0.1524" layer="1"/>
+<wire x1="17.7" y1="46.65" x2="17.7" y2="45.25" width="0.1524" layer="16"/>
+<wire x1="17.7" y1="45.25" x2="17.75" y2="45.25" width="0.1524" layer="16"/>
+<via x="17.75" y="45.25" extent="1-16" drill="0.35"/>
+<wire x1="17.75" y1="45.25" x2="15.5" y2="45.25" width="0.1524" layer="1"/>
+<wire x1="15.5" y1="45.25" x2="14.25" y2="44" width="0.1524" layer="1"/>
 <via x="14.25" y="44" extent="1-16" drill="0.35"/>
 <wire x1="14.25" y1="44" x2="4.49" y2="44" width="0.1524" layer="16"/>
 <wire x1="4.49" y1="44" x2="2.45" y2="41.96" width="0.1524" layer="16"/>
@@ -2141,18 +2140,19 @@ design rules under a new name.</description>
 <signal name="N$5">
 <contactref element="LED1" pad="3"/>
 <contactref element="R3" pad="6"/>
-<wire x1="1.92875" y1="37.63875" x2="2" y2="37.5675" width="0.1524" layer="16"/>
 <wire x1="6" y1="32.425" x2="5.975" y2="32.4" width="0.1524" layer="16"/>
-<wire x1="1.92875" y1="37.63875" x2="6" y2="33.5675" width="0.1524" layer="16"/>
-<wire x1="6" y1="33.5675" x2="6" y2="32.425" width="0.1524" layer="16"/>
+<wire x1="6" y1="33" x2="6" y2="32.425" width="0.1524" layer="16"/>
+<wire x1="1.92875" y1="37.63875" x2="2" y2="37.5675" width="0.1524" layer="16"/>
+<wire x1="2" y1="37.5675" x2="2" y2="37" width="0.1524" layer="16"/>
+<wire x1="2" y1="37" x2="6" y2="33" width="0.1524" layer="16"/>
 </signal>
 <signal name="N$6">
 <contactref element="LED1" pad="2"/>
 <contactref element="R3" pad="7"/>
 <wire x1="5" y1="32.425" x2="5.025" y2="32.4" width="0.1524" layer="16"/>
-<wire x1="1.12875" y1="37.63875" x2="5" y2="33.7675" width="0.1524" layer="16"/>
-<wire x1="5" y1="32.425" x2="5.025" y2="32.4" width="0.1524" layer="16"/>
-<wire x1="5" y1="33.7675" x2="5" y2="32.425" width="0.1524" layer="16"/>
+<wire x1="5" y1="33" x2="5" y2="32.425" width="0.1524" layer="16"/>
+<wire x1="1.12875" y1="37.63875" x2="1.12875" y2="36.87125" width="0.1524" layer="16"/>
+<wire x1="1.12875" y1="36.87125" x2="5" y2="33" width="0.1524" layer="16"/>
 </signal>
 <signal name="N$7">
 <contactref element="SJ2" pad="2"/>
@@ -2222,6 +2222,17 @@ design rules under a new name.</description>
 <mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
+<errors>
+<approved hash="20,16,952f8de59f069dd6"/>
+<approved hash="4,1,a7cbef20899e4cac"/>
+<approved hash="4,1,c921f81f733f8358"/>
+<approved hash="19,16,0294b5428c872a3a"/>
+<approved hash="19,16,74f9b17b4d266e29"/>
+<approved hash="19,16,ad8a7b2d45ea687c"/>
+<approved hash="19,16,acc0ed24abec1139"/>
+<approved hash="19,16,f6f81d5cb222a5cf"/>
+<approved hash="19,16,f6f81d5cb222a5cf"/>
+</errors>
 </board>
 </drawing>
 <compatibility>

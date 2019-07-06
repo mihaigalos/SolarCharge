@@ -9258,6 +9258,10 @@ for Raspberry Pi</text>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="105,1,170.18,36.195,N$2,,,,,"/>
+<approved hash="105,1,100.33,63.5,N$8,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
