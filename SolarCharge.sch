@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -8883,6 +8883,9 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="R5" library="ROHM" deviceset="RESISTOR" device="0603-RES"/>
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
 <part name="SJ4" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="SJ" device="" package3d_urn="urn:adsk.eagle:package:15471/1"/>
+<part name="+3V6" library="supply1" deviceset="+3V3" device=""/>
+<part name="SUPPLY3" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="SJ3" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="SJ" device="" package3d_urn="urn:adsk.eagle:package:15471/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -9007,6 +9010,16 @@ for Raspberry Pi</text>
 <attribute name="NAME" x="125.73" y="83.82" size="1.778" layer="95"/>
 <attribute name="VALUE" x="125.73" y="77.47" size="1.778" layer="96"/>
 </instance>
+<instance part="+3V6" gate="G$1" x="157.48" y="86.36" smashed="yes">
+<attribute name="VALUE" x="154.94" y="86.36" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="SUPPLY3" gate="GND" x="157.48" y="71.12" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="159.385" y="67.945" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="SJ3" gate="1" x="151.13" y="81.28" smashed="yes">
+<attribute name="NAME" x="148.59" y="83.82" size="1.778" layer="95"/>
+<attribute name="VALUE" x="148.59" y="77.47" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -9031,6 +9044,9 @@ for Raspberry Pi</text>
 <wire x1="139.7" y1="76.2" x2="139.7" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="73.66" x2="101.6" y2="73.66" width="0.1524" layer="91"/>
 <junction x="101.6" y="73.66"/>
+<pinref part="SUPPLY3" gate="GND" pin="GND"/>
+<wire x1="157.48" y1="73.66" x2="139.7" y2="73.66" width="0.1524" layer="91"/>
+<junction x="139.7" y="73.66"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="GND"/>
@@ -9126,6 +9142,12 @@ for Raspberry Pi</text>
 <pinref part="R5" gate="G$1" pin="1"/>
 <pinref part="+3V5" gate="G$1" pin="+3V3"/>
 <wire x1="127" y1="142.24" x2="127" y2="143.51" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="+3V6" gate="G$1" pin="+3V3"/>
+<wire x1="157.48" y1="83.82" x2="157.48" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="SJ3" gate="1" pin="2"/>
+<wire x1="156.21" y1="81.28" x2="157.48" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RED_RESISTOR" class="0">
@@ -9227,17 +9249,6 @@ for Raspberry Pi</text>
 <wire x1="231.14" y1="63.5" x2="170.18" y2="63.5" width="0.1524" layer="91" style="shortdash"/>
 </segment>
 </net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="CN1" gate="G$1" pin="2"/>
-<wire x1="139.7" y1="78.74" x2="139.7" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="81.28" x2="133.35" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="Q2" gate="G$1" pin="D"/>
-<wire x1="133.35" y1="102.87" x2="133.35" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="SJ4" gate="1" pin="2"/>
-<junction x="133.35" y="81.28"/>
-</segment>
-</net>
 <net name="N$10" class="0">
 <segment>
 <pinref part="R4" gate="G$1" pin="1"/>
@@ -9253,6 +9264,20 @@ for Raspberry Pi</text>
 <pinref part="U2" gate="G$1" pin="(RESET/PCINT3/ADC3)PB3"/>
 <pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="125.73" y1="132.08" x2="127" y2="132.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="CN1" gate="G$1" pin="2"/>
+<wire x1="139.7" y1="78.74" x2="139.7" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="81.28" x2="133.35" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="Q2" gate="G$1" pin="D"/>
+<wire x1="133.35" y1="102.87" x2="133.35" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="SJ4" gate="1" pin="2"/>
+<junction x="133.35" y="81.28"/>
+<pinref part="SJ3" gate="1" pin="1"/>
+<wire x1="146.05" y1="81.28" x2="139.7" y2="81.28" width="0.1524" layer="91"/>
+<junction x="139.7" y="81.28"/>
 </segment>
 </net>
 </nets>
