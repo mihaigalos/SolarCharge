@@ -13400,6 +13400,14 @@ for Raspberry Pi</text>
 <text x="114.3" y="119.38" size="1.778" layer="91">D6 : 0.15V voltage drop at its minimum (200nA deep sleep for MCU) after 3h.
 3V supercap : XC6206P332MR
 2.7V supercap : XC6206P302MR</text>
+<text x="33.02" y="124.46" size="2.54" layer="91">How to draw ellipse shape for board:
+Go To File-&gt;Run Ulp. Choose cmd-draw.ulp
+
+Choose Polygon and Full ellipse. For this board,
+
+Width: 0.15 X: 20 Y: 31
+Radius: 21 Angle Step: 0.1
+Ellipse Factor: 2</text>
 </plain>
 <instances>
 <instance part="D1" gate="G$1" x="71.12" y="81.28" smashed="yes" rot="R180">
