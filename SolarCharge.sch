@@ -13407,7 +13407,10 @@ Choose Polygon and Full ellipse. For this board,
 
 Width: 0.15 X: 20 Y: 31
 Radius: 21 Angle Step: 0.1
-Ellipse Factor: 2</text>
+Ellipse Factor: 2
+
+Use this calculator to compute ellipse:
+https://rechneronline.de/pi/cut-cylinder.php</text>
 </plain>
 <instances>
 <instance part="D1" gate="G$1" x="71.12" y="81.28" smashed="yes" rot="R180">
