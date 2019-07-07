@@ -13403,10 +13403,10 @@ for Raspberry Pi</text>
 <text x="33.02" y="124.46" size="2.54" layer="91">How to draw ellipse shape for board:
 Go To File-&gt;Run Ulp. Choose cmd-draw.ulp
 
-Choose Polygon and Full ellipse. For this board,
+Choose Wir, Angle Step and Full ellipse. For this board,
 
-Width: 0.15 X: 20 Y: 31
-Radius: 21 Angle Step: 0.1
+Width: 0.1524 X: 20 Y: 31
+Radius: 23 Angle Step: 0.1
 Ellipse Factor: 2
 
 Use this calculator to compute ellipse:
