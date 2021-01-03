@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.0">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -370,15 +370,15 @@ Creation Date: 2015-01-06,
 <package name="SOLAR_CELL_53_30">
 <wire x1="0" y1="0" x2="0" y2="53" width="0.4064" layer="21"/>
 <wire x1="30" y1="0" x2="30" y2="53" width="0.4064" layer="21"/>
-<smd name="P$1" x="15" y="-1" dx="5" dy="7" layer="1"/>
-<smd name="P$2" x="15" y="54" dx="5" dy="7" layer="1"/>
+<smd name="P$1" x="15" y="1.032" dx="5" dy="7" layer="1"/>
+<smd name="P$2" x="15" y="52.73" dx="5" dy="7" layer="1"/>
 <wire x1="0" y1="53" x2="10" y2="53" width="0.4064" layer="21"/>
-<wire x1="30" y1="53" x2="20" y2="53" width="0.4064" layer="21"/>
 <wire x1="0" y1="0" x2="10" y2="0" width="0.4064" layer="21"/>
-<wire x1="20" y1="0" x2="30" y2="0" width="0.4064" layer="21"/>
-<wire x1="18.73" y1="-2.73" x2="21.73" y2="-2.73" width="0.4064" layer="21"/>
-<wire x1="20.23" y1="-4.23" x2="20.23" y2="-1.23" width="0.4064" layer="21"/>
-<wire x1="23" y1="55.5" x2="20" y2="55.5" width="0.4064" layer="21"/>
+<wire x1="7.046" y1="-2.73" x2="10.046" y2="-2.73" width="0.4064" layer="21"/>
+<wire x1="8.546" y1="-4.23" x2="8.546" y2="-1.23" width="0.4064" layer="21"/>
+<wire x1="10.046" y1="55.754" x2="7.046" y2="55.754" width="0.4064" layer="21"/>
+<smd name="P$3" x="27.192" y="1.032" dx="5" dy="7" layer="1"/>
+<smd name="P$4" x="26.938" y="52.73" dx="5" dy="7" layer="1"/>
 </package>
 </packages>
 <symbols>
